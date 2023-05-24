@@ -36,7 +36,6 @@ export default function Document() {
           js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-        FB.CustomerChat.show()  
         `}}
       />
     </Html>

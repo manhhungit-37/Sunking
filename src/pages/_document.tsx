@@ -14,13 +14,14 @@ export default function Document() {
       <div id="fb-customer-chat" className="fb-customerchat">
       </div>
 
-      <Script id="messager-chat">
+      <script>
         {`var chatbox = document.getElementById('fb-customer-chat');
+      console.log(1);
       chatbox.setAttribute("page_id", "114354014986699");
       chatbox.setAttribute("attribution", "biz_inbox");`}
-      </Script>
+      </script>
 
-      <Script id="facebook-chat">
+      <script>
         {`window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
@@ -35,7 +36,7 @@ export default function Document() {
         js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));`}
-      </Script>
+      </script>
     </Html>
   );
 }

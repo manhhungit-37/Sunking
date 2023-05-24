@@ -8,6 +8,7 @@ import FormControl from './components/FormControl';
 import Checkbox from './components/Checkbox';
 import Select from './components/Select';
 import Textarea from './components/Textarea';
+import Table from './components/Table';
 
 const breakpoints = {
   sm: '320px',
@@ -28,6 +29,7 @@ const theme = extendTheme({
     Checkbox,
     Select,
     Textarea,
+    Table
   },
   fonts: {
     body: 'Inter',
@@ -77,6 +79,9 @@ const theme = extendTheme({
       50: '#dc2d2d',
       100: '#f25151',
       200: '#e35757'
+    },
+    tableColor: {
+      100: '#ebedee'
     }
   },
   styles: {

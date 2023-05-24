@@ -14,7 +14,7 @@ const Input = {
       }
     }
   },
-  default: {
+  defaultProps: {
     variant: 'unstyled'
   }
 };

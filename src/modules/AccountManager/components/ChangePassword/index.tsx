@@ -1,4 +1,4 @@
-import { Box, Button, Checkbox, Text, Flex, FormControl, FormLabel, Input, InputGroup, InputRightElement, Stack, useBoolean } from '@chakra-ui/react';
+import { Box, Button, Text, Flex, FormControl, FormLabel, Input, InputGroup, InputRightElement, Stack, useBoolean } from '@chakra-ui/react';
 import ShowPasswordIcon from '@/assets/icons/ShowPasswordIcon';
 import HidePasswordIcon from '@/assets/icons/HidePasswordIcon';
 import { useForm } from 'react-hook-form';

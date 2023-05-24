@@ -25,7 +25,7 @@ export default function Document() {
         {`window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
-          version          : 'v17.0'
+          version          : "v17.0"
         });
       };
 

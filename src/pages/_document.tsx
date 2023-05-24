@@ -10,9 +10,6 @@ export default function Document() {
         <NextScript />
       </body>
       <div id="fb-root"></div>
-      <div id="fb-customer-chat" className="fb-customerchat">
-      </div>
-
       <script
         dangerouslySetInnerHTML={{
           __html: `var chatbox = document.getElementById('fb-customer-chat');
@@ -38,6 +35,8 @@ export default function Document() {
         }(document, 'script', 'facebook-jssdk'));
         `}}
       />
+      <div id="fb-customer-chat" className="fb-customerchat">
+      </div>
     </Html>
   );
 }

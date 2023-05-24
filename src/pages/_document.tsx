@@ -19,7 +19,7 @@ export default function Document() {
         chatbox.setAttribute("attribution", "biz_inbox");`}
       </Script>
 
-      <Script strategy="lazyOnload" id="script-fb">
+      <Script id="script-fb">
         {`window.fbAsyncInit = function() {
           FB.init({
             xfbml            : true,
@@ -33,7 +33,9 @@ export default function Document() {
           js = d.createElement(s); js.id = id;
           js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
           fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));`}
+        }(document, 'script', 'facebook-jssdk'));
+        FB.CustomerChat.show()  
+        `}
       </Script>
     </Html>
   );

@@ -1,6 +1,6 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
+    "extends": "next/core-web-vitals",
+    "rules": {
         "indent": [
             "error",
             2
@@ -18,5 +18,8 @@
             "always"
         ],
         "react/react-in-jsx-scope": "off"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020
     }
 }

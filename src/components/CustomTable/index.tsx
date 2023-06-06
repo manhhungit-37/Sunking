@@ -2,16 +2,17 @@ import { Table, TableContainer, Tbody, Td, Th, Thead, Tr } from '@chakra-ui/reac
 
 interface IProps<T> {
   data: T[];
+  variant?: 'odd' | 'even';
   columns: {
     Header: string;
     Cell: (item: T) => JSX.Element;
-  }[]
+  }[];
 }
 
-function CustomTable<T>({ columns, data }: IProps<T>) {
+function CustomTable<T>({ columns, data, variant = 'odd' }: IProps<T>) {
   return (
-    <TableContainer borderRadius="8px">
-      <Table variant="striped" colorScheme="tableColor">
+    <TableContainer borderRadius="8px" whiteSpace="normal">
+      <Table variant={variant}>
         <Thead>
           <Tr>
             {columns.map((item, idx) => (

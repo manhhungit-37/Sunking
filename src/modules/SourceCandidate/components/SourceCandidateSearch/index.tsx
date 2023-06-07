@@ -13,7 +13,7 @@ import Select from '@/components/Select';
 import { locationSelect, roleSelect } from '@/constant/selectData';
 import { useForm, Controller } from 'react-hook-form';
 
-function SearchFilters() {
+function SourceCandidateSearch() {
   const [filters, setFilters] = useState('');
   const { handleSubmit, reset, watch, control, register } = useForm({
     defaultValues: {
@@ -27,7 +27,6 @@ function SearchFilters() {
       px="2.5rem"
       py="16px"
       borderTop="1px solid"
-      borderBottom="1px solid"
       borderColor="trGray.400"
       maxW="1440px"
       mx="auto"
@@ -93,7 +92,7 @@ function SearchFilters() {
               px="32px"
               py="12px"
             >
-              Find a job
+              Find Candidate
             </Button>
           </HStack>
 
@@ -142,4 +141,4 @@ function SearchFilters() {
   );
 }
 
-export default SearchFilters;
+export default SourceCandidateSearch;

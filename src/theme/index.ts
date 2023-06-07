@@ -53,6 +53,7 @@ const theme = extendTheme({
     trBlue: {
       75: '#d3e2f8',
       100: '#698fce',
+      200: '#103575'
     },
     trGray: {
       10: '#f7f9fa1a',
@@ -79,6 +80,11 @@ const theme = extendTheme({
       50: '#dc2d2d',
       100: '#f25151',
       200: '#e35757'
+    },
+    trGreen: {
+      50: '#277f7f',
+      100: '#80d8d8',
+      200: '#9de1e1'
     },
     tableColor: {
       100: '#ebedee'

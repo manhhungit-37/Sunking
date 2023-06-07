@@ -22,7 +22,6 @@ function LogoIcon(props: IconProps) {
       <circle cx="18" cy="10.6175" r="3" fill="#2151A2"/>
       <circle cx="18" cy="10.6175" r="3" fill="#2151A2"/>
     </Icon>
-
   );
 }
 

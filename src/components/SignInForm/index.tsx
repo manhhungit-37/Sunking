@@ -38,18 +38,18 @@ function SignInForm() {
             variant="outline"
             placeholder="*****************"
           />
-          <InputRightElement>
+          <InputRightElement h="100%" px="10px">
             <Button p="0px" bg="transparent" onClick={setShowPassword.toggle}>
               {showPassword ? <ShowPasswordIcon fontSize="24px" /> : <HidePasswordIcon fontSize="24px" />}
             </Button>
           </InputRightElement>
         </InputGroup>
       </FormControl>
-      <Button variant="primary" w="100%" mt="24px">SIGN IN</Button>
+      <Button variant="primary" w="100%" mt="24px" h="56px">SIGN IN</Button>
       <Flex justify="space-between" align="center" mt="16px">
         <Flex columnGap="24px">
           <Text fontWeight={500}>Have no an account?</Text>
-          <Link href="/employer-signup">
+          <Link href="#">
             <Box fontWeight={500} textDecoration="underline" color="trPrimary.50">
               Sign up now
             </Box>

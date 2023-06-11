@@ -6,19 +6,21 @@ import {
   Input,
   Text,
   Stack,
-  Checkbox,
   InputGroup,
   InputRightElement,
   useBoolean,
   Button,
-  Flex, 
+  Flex,
+  Divider, 
 } from '@chakra-ui/react';
 import { useFormContext } from 'react-hook-form';
 import ShowPasswordIcon from '@/assets/icons/ShowPasswordIcon';
 import HidePasswordIcon from '@/assets/icons/HidePasswordIcon';
+import FacebookIcon from '@/assets/icons/FacebookIcon';
 import CheckboxSignUp from '@/assets/icons/CheckboxSignUp';
 import CheckboxSignUpEmpty from '@/assets/icons/CheckboxSignUpEmpty';
 import useContain from '@/hooks/useContain';
+import GoogleIcon from '@/assets/icons/GoogleIcon';
 
 function AccountForm() {
   const [showPassword, setShowPassword] = useBoolean(false);
@@ -29,7 +31,26 @@ function AccountForm() {
 
   return (
     <Box mt="24px">
-      <Box fontSize="24px" lineHeight="32px" fontWeight={700}>Account</Box>
+      <Button variant="white" columnGap="8px" textTransform="uppercase" w="100%" h="56px">
+        <FacebookIcon fontSize="24px" fill="trPrimary.50" />
+        SIGN UP WITH FACEBOOK
+      </Button>
+      <Button variant="grey" columnGap="8px" textTransform="uppercase" w="100%" h="56px" mt="16px">
+        <GoogleIcon fontSize="24px" fill="trGray.100" />
+        SIGN UP WITH FACEBOOK
+      </Button>
+      <Flex align="center" my="24px" columnGap="24px">
+        <Divider borderColor="trGray.200" />
+        <Text
+          fontSize="16px"
+          lineHeight="24px"
+          fontWeight={500}
+          color="trGray.300"
+        >
+          Or
+        </Text>
+        <Divider borderColor="trGray.200" />
+      </Flex>
       <FormControl justifyContent="flex-end">
         <FormLabel display="flex" justifyContent="flex-end" fontSize={14} lineHeight="20px" color="trGray.300" mr="24px">
           <Text fontSize={14} lineHeight="20px" color="trGray.300">Email</Text>
@@ -37,18 +58,6 @@ function AccountForm() {
         </FormLabel>
         <Input type="email" variant="outline" placeholder="test@test.com" maxW="500px" />
       </FormControl>
-      <Text
-        w="calc(100% - 128px)"
-        maxW="500px"
-        fontSize="12px"
-        lineHeight="16px"
-        fontWeight={500}
-        color="trGray.300"
-        mt="8px"
-        ml="auto"
-      >
-        *Jobseeker recommends registering by company email (by domain name, company website) for fast browsing support & unlimited posting.
-      </Text>
       <FormControl justifyContent="flex-end">
         <FormLabel display="flex" justifyContent="flex-end" fontSize={14} lineHeight="20px" color="trGray.300" mr="24px">
           <Text fontSize={14} lineHeight="20px" color="trGray.300">Password</Text>
@@ -99,6 +108,9 @@ function AccountForm() {
           </InputRightElement>
         </InputGroup>
       </FormControl>
+      <Button variant="primary" w="100%" mt="16px" h="56px">
+        CREATE AN ACCOUNT
+      </Button>
     </Box>
   );
 };

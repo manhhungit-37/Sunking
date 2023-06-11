@@ -3,10 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FormProvider, useForm } from 'react-hook-form';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import SignInPng from '@/assets/png/sign-in.png';
-import SignInForm from '../../components/SignInForm';
+import SignUpPng from '@/assets/png/sign-up.png';
+import SignInFormWrapper from './components/SignInFormWrapper';
 
-function EmployerSignIn() {
+function SignUp() {
   const methods = useForm();
 
   return (
@@ -17,7 +17,6 @@ function EmployerSignIn() {
           <Box bg="trWhite" borderRadius="8px" p="24px" my="40px" flexGrow={1}>
             <Flex fontSize="32px" lineHeight="40px" columnGap="16px" align="center">
               <Text as="h2" fontSize="32px" fontWeight={700} >Sign In</Text>
-              <Text fontWeight={500}>for Bussiness</Text>
             </Flex>
             <Box columnGap="24px" borderBottom="1px solid" borderColor="trGray.200" p="8px 0 24px">
               <Text fontWeight={500}>Welcome back to our website. Please enter your username and password to access your account. </Text>
@@ -25,12 +24,12 @@ function EmployerSignIn() {
             <Divider bg="trGray.200" mb="24px" />
             <FormProvider {...methods}>
               <form>
-                <SignInForm />
+                <SignInFormWrapper />
               </form>
             </FormProvider>
           </Box>
           <Box pos="relative" w="660px" maxW="46%">
-            <Image src={SignInPng} alt="Sign In Png" fill sizes="660px" />
+            <Image src={SignUpPng} alt="Sign Up Png" fill sizes="660px" />
           </Box>
         </Flex>
       </Box>
@@ -38,4 +37,4 @@ function EmployerSignIn() {
   );
 };
 
-export default EmployerSignIn;
+export default SignUp;

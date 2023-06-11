@@ -4,7 +4,7 @@ import EmployerSignIn from '@/modules/EmployerSignIn';
 import EmployerHeader from '@/components/EmployerHeader';
 import Footer from '@/components/Footer';
 
-export default function AdvancedSearchPage() {
+export default function EmployerSignInPage() {
   return (
     <>
       <Head>
